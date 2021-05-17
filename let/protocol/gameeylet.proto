@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option optimize_for = SPEED;
+option go_package = "protocol/";
+
+message Server {
+    string name = 1;
+
+    enum Type {
+        Minecraft = 0;
+    }
+    
+}
